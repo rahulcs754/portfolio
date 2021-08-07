@@ -144,17 +144,9 @@ ol, ul{
 }
 
 
-.section h1 {
-  text-align: center;
- 
-}
-
-
 .graysection{
     background-color: var(--light-blue);
 }
-
-
 
 .footer{
     background-color: var(--primary-color);
@@ -185,4 +177,17 @@ ol, ul{
   border: 1px solid rgb(179, 102, 250);
   border-radius:5px;
   text-decoration: none;
+}
+
+/* text align */
+.text-left{
+  text-align: left;
+}
+
+.text-right{
+  text-align: left;
+}
+
+.text-center{
+  text-align: left;
 }
