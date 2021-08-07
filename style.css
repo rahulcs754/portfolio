@@ -97,14 +97,6 @@ ol, ul{
     margin-left: 1em;;
 }
 
-.navigation .nav-pills li :hover{
-    border: 1px solid whitesmoke;
-}
-
-.navigation .nav-pills li :active{
-    border: 1px solid whitesmoke;
-}
-
 .navigation .link {
   color: whitesmoke;
 }
