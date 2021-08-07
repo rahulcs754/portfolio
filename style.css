@@ -185,9 +185,9 @@ ol, ul{
 }
 
 .text-right{
-  text-align: left;
+  text-align: right;
 }
 
 .text-center{
-  text-align: left;
-}
+  text-align: center;
+} 
