@@ -183,3 +183,7 @@ ol, ul{
 .text-center{
   text-align: center;
 } 
+
+.active_link{
+  border:1px solid white
+} 
