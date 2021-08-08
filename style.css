@@ -43,8 +43,6 @@ ol, ul{
   box-sizing: border-box;
   text-decoration: none;
   padding: 0.5rem 1rem;
-  /* margin-top: 1rem;
-  margin-bottom: 1rem ; */
 }
 
 .link-primary {
@@ -187,3 +185,38 @@ ol, ul{
 .active_link{
   border:1px solid white
 } 
+
+/* mobile menu*/
+.mobile-menu{
+  display: none;
+}
+
+@media (min-width:320px ) and (max-width: 650px) { 
+
+ul.list-non-bullet.nav-pills {
+    display: none;
+    margin-top: 0.4em;
+}
+
+ul.list-non-bullet.nav-pills li.list-item-inline {
+  color: var(--off-white);
+  background-color: var(--primary-color);
+  display: block;
+}
+
+.mobile-menu{
+  display: inline-block;
+  position: absolute;
+  right: 3em;
+  margin-top: 1em;  
+}
+
+.line{
+ height: 1px;
+ border: 1px solid var(--dark-blue);
+ width: 2em;
+ margin-top:5px;
+}
+
+ 
+}
