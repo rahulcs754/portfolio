@@ -56,6 +56,20 @@ ol, ul{
   border: 1px solid var(--primary-color);
 }
 
+.resource-links{
+  color: var(--primary-color);
+}
+/* Lists */
+
+.list-non-bullet {
+  list-style: none;
+}
+
+.list-item-inline {
+  display: inline;
+  padding: 0 0.5rem;
+}
+
 /* Nav */
 
 .navigation {
@@ -91,24 +105,14 @@ ol, ul{
 
 /* Header */
 
-.hero {
-  padding: 2rem;
-  padding-top: 4rem;
-}
 
-.hero .hero-img {
-  width: 37vw;
-  display: block;
-  margin: auto;
-} 
-
-.hero .hero-heading {
+section .heading {
   padding-top: 1rem;
   color: var(--dark-blue);
   text-align: center;
 }
 
-.hero .hero-heading .heading-inverted {
+section .heading .inverted {
   color: var(--primary-color);
 }
 
@@ -151,6 +155,7 @@ ol, ul{
   border: 1px solid rgb(179, 102, 250);
   border-radius:5px;
   text-decoration: none;
+  display: initial; 
 }
 
 /* text align */
@@ -177,7 +182,6 @@ ol, ul{
 
 @media (min-width:320px ) and (max-width: 650px) { 
 
-
 ul.list-non-bullet.nav-pills {
     display: none;
     margin-top: 0.4em;
@@ -202,12 +206,12 @@ ul.list-non-bullet.nav-pills li.list-item-inline {
  width: 2em;
  margin-top:5px;
 }
+  
 
+/* for live and source  link */
 a.btn-p {
   display: block;
-  margin-top: 5px;
-}
- 
+  margin-top: 14px;
 }
 
-
+}
