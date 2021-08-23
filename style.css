@@ -215,3 +215,57 @@ a.btn-p {
 }
 
 }
+
+/*------------------- Blog css ------------- */
+/* add google font for blog */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+.blog-body{
+  font-family: 'Inconsolata', monospace;
+  margin: 0px auto;
+  text-align: center;
+  width: 100%;
+  height: 60px;
+ 
+}
+
+.blog-heading{
+  background-color: var(--btn2-color);
+  color:var(--light-blue);
+  position: relative;
+}
+
+.blog-create{
+  background-color: var(--primary-color);
+  color:var(--off-white);
+  padding: 0 0.5rem;
+  position: absolute; 
+  top:12vh;
+  right:4.9vw; 
+}
+
+.blog-main{
+  padding: 5px  15px;
+  background-color: var(--light-blue);
+  width: 90%;
+  margin:0px auto;
+  text-align: left;
+}
+
+.blog-main  .title{
+ font-size: 1.2rem;
+ color:var(--dark-blue);
+}
+
+.blog-main .code{
+  background-color:var(--dark-blue);
+  color: var(--off-white);
+  outline: 0px;
+  border:1px solid gray;
+  width: 100%;
+  height: 100px;
+  text-align: left;
+  padding:0;
+}
+
+
+/*------------------- Blog css ------------- */

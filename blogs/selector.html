@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A CSS Selector</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="blog-body">
+
+    
+    <section  class="section">
+        <h1 class="blog-heading">Blog Title : A Css Selcetor</h1>
+        <span class="blog-create">23-08-2021</span>
+    </section>
+
+
+    <section  class="blog-main">
+    <h3 class="title">What is a selector?:</h3>
+    <p>A selector is an element of an HTML tag, any class, id.</p>
+
+    <h3 class="title"> How : </h3>
+    <p>you have below code in your html page </p>
+    <textarea class="code">
+<div>
+        <p>I want to increage my font size and color </p>
+        <p>I don't want to increage my font size and color </p>
+</div>
+    </textarea>
+
+    <p>Now you want to apply CSS on the p tag. how you can do this. 
+        To apply CSS on the p tag. 
+        You should apply CSS like below code</p>
+    
+    <textarea class="code">
+p{
+   font-size:25px;
+   color:red;
+}
+    </textarea>
+
+    <h3 class="title">Now I will tell you some selector name list </h3>
+    <p>
+      1. Universal Selector <br/>
+      2. Type Selector <br/>
+      3. Class Selector <br/>
+      4. Id Selector <br/>
+      5. Attibute Selector <br/>
+      6. Grouping Selector <br/>
+    </p>
+
+    <p >let  Explain every selector one by one.</p>
+
+    <h3 class="title">Universal Selector :</h3>
+    <textarea class="code">
+*{
+color: blue;
+}
+    </textarea>
+    <p>In CSS, * is a universal selector that applies CSS to every element. <br/><br/>
+        Notes: after applying this CSS every HTML element on the page to have blue text.</p>
+
+    <h3 class="title">Type Selector :</h3>
+<textarea class="code">
+section {
+padding: 2em;
+}
+</textarea>
+<p>a type selector matches the HTML tag and then apply <br/> <br/>
+    Notes: This rule causes every <section> element to have 2em of padding on all sides.</p>
+
+<!------------------->
+
+<h3 class="title">Class selector:</h3>
+<p>class is an HTML tag attribute. In this class attribute, we define many CSS classes.</p>
+
+<textarea class="code">
+<div class="my-class"></div>
+<button class="my-class"></button>
+<p class="my-class"></p>
+</textarea>
+
+<p>In the above code, there is a class my-class
+    for this, we can apply CSS like this</p>
+
+<textarea class="code">
+.my-class{
+color: red;
+}
+</textarea>
+
+<h3 class="title">ID selector:</h3>
+<p>An HTML element with an id attribute should be the only element on a page with that ID value. You select elements with an ID selector like this:</p>
+<textarea class="code">
+#rad {
+border: 1px solid blue;
+}
+</textarea>
+
+<h3 class="title">Attribute selector:</h3>
+<p>Instruct CSS to look for attributes by wrapping the selector with square brackets ([ ]).</p>
+<textarea class="code">
+[data-type='primary'] {
+color: red;
+}
+</textarea>
+
+<p>This CSS looks for all elements that have an attribute of data-type with a value of primary, like this:</p>
+<textarea class="code">
+    <div data-type="primary"></div>
+</textarea>
+
+<h3 class="title">Grouping selectors:</h3>
+<p>A selector doesn't have to match only a single element. You can group multiple selectors by separating them with commas:</p>
+<textarea class="code">
+strong,
+em,
+.my-class,
+[lang] {
+    color: red;
+}
+</textarea>
+
+<p>This example extends the color change to both <strong> strong and <em> em. It's also extended to a class named .my-class, and an element that has a lang attribute.</p>
+
+
+
+</section>
+
+</body>
+</html>
