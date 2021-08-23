@@ -19,14 +19,51 @@
     <section class="blog-main">
 
     <h3 class="title">Explain Hoisting in javascript? 🤔 </h3>
+    <p></p>
+
     <h3 class="title">What is Closures in JavaScript? 🤔</h3>
+    <p>
+        A closure is a function having access to the parent scope, even after the parent function has closed.
+        <br/>
+        <br/>
+        <strong>Why we need closer ? 🤔</strong> 
+        <p>it is make function have private variable.</p>
+        <p>  
+           Explain with example:
+            <br><br/>   
+            let assume, we create a function that will counter after every click on the button. so first I have declared " x = 0 ". and then create a function with the name " add() ". Whenever I clicked the " add button ". that action access the "call add()"   function. In this function,  we can increase our counter easily. But x is a global variable that can access by any other function. 
+            We want to declare a function that has its own private variable.
+            For that we use closure.JavaScript supports nested functions. In closure,  we declare a variable under the outer function and that variable only accesses the inner function.  
+            
+Code Example: 
+
+<textarea class="code">
+const add = (function () {
+let counter = 0;
+return function () {counter += 1; return counter;}
+})();
+</textarea>
+
+</p>
+
+
+    </p>
      
     <h3 class="title">What are callbacks? 🤔</h3>
+    <p></p>
+
     <h3 class="title">What are high order Functions in javascript ?  🤔</h3>
+    <p></p>
      
     <h3 class="title">What are arrow functions? 🤔</h3>
+    <p></p>
+
+
     <h3 class="title">What is Object Destructuring? 🤔</h3>
+    <p></p>
+
     <h3 class="title">Difference between “ == “ and “ === “ operators? 🤔</h3>
+    <p></p>
 
     </section>
 
