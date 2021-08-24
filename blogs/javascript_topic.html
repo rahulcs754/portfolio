@@ -11,16 +11,26 @@
 
     
     <section  class="section">
-        <h1 class="blog-heading">Blog Title : Mostly Asked Javascripts Topic</h1>
-        <span class="blog-create">23-08-2021</span>
+        <h1 class="blog-heading">Blog Title : Some Javascripts Topic</h1>
+        <span class="blog-create">24-08-2021</span>
     </section>
 
 
     <section class="blog-main">
 
     <h3 class="title">Explain Hoisting in javascript? 🤔 </h3>
-    <p></p>
+    <p>Hoisting is JavaScript's default behavior of moving declarations to the top.<br/>
+       In JavaScript, a variable can be declared after it has been used.<br/>
+       In other words; a variable can be used before it has been declared.<br/>
 
+       Note:<br/>
+       Hoisting is an unknown or overlooked behavior of JavaScript.<br/>
+       If a developer doesn't understand hoisting, programs may contain bugs (errors).<br/>
+       To avoid bugs, always declare all variables at the beginning of every scope.<br/>
+       Since this is how JavaScript interprets the code, it is always a good rule.
+    </p>
+
+    <hr/>
     <h3 class="title">What is Closures in JavaScript? 🤔</h3>
     <p>
         A closure is a function having access to the parent scope, even after the parent function has closed.
@@ -48,26 +58,141 @@ return function () {counter += 1; return counter;}
 
 
     </p>
-     
+    <hr/>
+
     <h3 class="title">What are callbacks? 🤔</h3>
-    <p></p>
+    <p>Callback is a function.It is passed as an argument to another function.</p>
+    <p>This technique allows a function to call another function.</p>
+    <p>A callback function can run after another function has finished.<br/><br/> Example of below code:</p>
+  
+<textarea class="code">
+function myDisplayer(some) {
+document.getElementById("demo").innerHTML = some;
+}
+function myCalculator(num1, num2) {
+let sum = num1 + num2;
+return sum;
+}
+let result = myCalculator(5, 5);
+myDisplayer(result);
+</textarea>
+    
 
-    <h3 class="title">What are high order Functions in javascript ?  🤔</h3>
-    <p></p>
+<hr/>
+
+    <h3 class="title">What are high order Functions in javascript? 🤔</h3>
+    <p>Higher-order functions are functions that take other function as arguments or return functions as their result. </p>
+    <p>For example, the map function on arrays is a higher order function. The map function takes a function as an argument. for example.</p>
      
+<textarea class="code">
+const double = n => n * 2
+
+[1, 2, 3, 4].map(double) // [ 2, 4, 6, 8 ]
+</textarea>
+
+<p>another example</p>
+<textarea class="code">
+    var grades = [
+    {name: 'John', grade: 8, sex: 'M'},
+    {name: 'Sarah', grade: 12, sex: 'F'},
+    {name: 'Bob', grade: 16, sex: 'M'},
+    {name: 'Johnny', grade: 2, sex: 'M'},
+    {name: 'Ethan', grade: 4, sex: 'M'},
+    {name: 'Paula', grade: 18, sex: 'F'},
+    {name: 'Donald', grade: 5, sex: 'M'},
+    {name: 'Jennifer', grade: 13, sex: 'F'},
+    {name: 'Courtney', grade: 15, sex: 'F'},
+    {name: 'Jane', grade: 9, sex: 'F'}
+];
+
+let isBoy = student => student.sex === 'M'
+
+let isGirl = student => student.sex === 'F'
+
+let getBoys = grades => (
+    grades.filter(isBoy)
+)
+
+let getGirls = grades => (
+    grades.filter(isGirl)
+)
+
+let average = grades => (
+    grades.reduce((acc, curr) => (
+        acc + curr.grade
+    ), 0) / grades.length
+)
+
+let maxGrade = grades => (
+    Math.max(...grades.map(student => student.grade))
+)
+
+let minGrade = grades => (
+    Math.min(...grades.map(student => student.grade))
+)
+
+let classroomAverage = average(grades) // 10.2
+let boysAverage = average(getBoys(grades)) // 7
+let girlsAverage = average(getGirls(grades)) // 13.4
+let highestGrade = maxGrade(grades) // 18
+let lowestGrade = minGrade(grades) // 2
+let highestBoysGrade = maxGrade(getBoys(grades)) // 16
+let lowestBoysGrade = minGrade(getBoys(grades)) // 2
+let highestGirlsGrade = maxGrade(getGirls(grades)) // 18
+let lowestGirlsGrade = minGrade(getGirls(grades)) // 9
+</textarea>
+        
+<hr/>
+
+
     <h3 class="title">What are arrow functions? 🤔</h3>
-    <p></p>
+    <p>Arrow functions were introduced in ES6.<br/>
+    Arrow functions allow us to write shorter function.<br/>
+   Before use arrow function :
+    </p>
+
+<textarea class="code">
+hello = function() {
+return "Hello World!";
+}
+</textarea>
+<p>After use arrow function: </p>
+
+<textarea  class="code">
+hello = () => {
+return "Hello World!";
+}    
+</textarea> 
 
 
-    <h3 class="title">What is Object Destructuring? 🤔</h3>
-    <p></p>
+<hr/>
 
-    <h3 class="title">Difference between “ == “ and “ === “ operators? 🤔</h3>
-    <p></p>
+    <h3 class="title">What is  Destructuring? 🤔</h3>
+    <p>The Destructuring is a way to access array and object value in variable <br/>
+    Let me explain with example
+    </p>
+    
+<textarea  class="code">
+let list = ["rahul","shukla"];    
+</textarea> 
 
+    <p>In above code, If i want to access rahul then i do using like this list[0].</p>
+
+<textarea  class="code">
+let [firstname , lastname] = ["rahul","shukla"];    
+</textarea> 
+  <p>In Destructuring way, we can access array using "firstname" name variable.<br/>
+    In above code, You can access array using firstname variable and lastname variable.
+</p>
+
+    </section>
+
+    <section class="footer">
+        <img src="../img/link.gif" alt="linkedin" onclick="window.open('www.linkedin.com/in/rahulcs754/','_blank')">
+        <img src="../img/ins.png" alt="instagram" onclick="window.open('www.instagram.com/rahulcs754/','_blank')" >
+        <img src="../img/github.gif" alt="github" onclick="window.open('github.com/rahulcs754','_blank')">
     </section>
 
 </body>
 </html>
 
-<!-- https://www.interviewbit.com/javascript-interview-questions/ --->
