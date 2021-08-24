@@ -211,6 +211,14 @@ a.btn-p {
   margin-top: 14px;
 }
 
+.blog-create{
+  top:0vh !important;
+}
+.blog-back{
+
+  top:0vh !important; 
+}
+
 }
 
 /*------------------- Blog css ------------- */
@@ -238,6 +246,16 @@ a.btn-p {
   position: absolute; 
   top:12vh;
   right:4.9vw; 
+}
+.blog-back{
+  background-color: var(--primary-color);
+  color:var(--off-white);
+  padding: 0 0.9rem;
+  position: absolute; 
+  top:12vh; 
+  left:4.9vw; 
+  cursor: pointer;
+  z-index:99 ;
 }
 
 .blog-main{
