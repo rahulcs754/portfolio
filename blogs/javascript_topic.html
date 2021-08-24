@@ -22,12 +22,6 @@
     <p>Hoisting is JavaScript's default behavior of moving declarations to the top.<br/>
        In JavaScript, a variable can be declared after it has been used.<br/>
        In other words; a variable can be used before it has been declared.<br/>
-
-       Note:<br/>
-       Hoisting is an unknown or overlooked behavior of JavaScript.<br/>
-       If a developer doesn't understand hoisting, programs may contain bugs (errors).<br/>
-       To avoid bugs, always declare all variables at the beginning of every scope.<br/>
-       Since this is how JavaScript interprets the code, it is always a good rule.
     </p>
 
     <hr/>
@@ -41,7 +35,7 @@
         <p>  
            Explain with example:
             <br><br/>   
-            let assume, we create a function that will counter after every click on the button. so first I have declared " x = 0 ". and then create a function with the name " add() ". Whenever I clicked the " add button ". that action access the "call add()"   function. In this function,  we can increase our counter easily. But x is a global variable that can access by any other function. 
+            let assume, we create a function that will counter after every click on the button. so first I have declared " x = 0 ". and then create a function with the name " add() ". Whenever I clicked the " add button ". that action access " add()"   function. In this function,  we can increase our counter easily. But x is a global variable that can access by any other function. 
             We want to declare a function that has its own private variable.
             For that we use closure.JavaScript supports nested functions. In closure,  we declare a variable under the outer function and that variable only accesses the inner function.  
             
