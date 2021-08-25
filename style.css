@@ -92,7 +92,8 @@ ol, ul{
 
 .navigation .nav-pills li{
     padding: 10px 20px 10px 20px;
-    margin-left: 1em;;
+    margin-left: 1em;
+    font-weight: 700;
 }
 
 .navigation .link {
